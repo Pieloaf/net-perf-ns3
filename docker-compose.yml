@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ns3:
+    build: .
+    container_name: ns3-container
+    volumes:
+      - "../EEN1058 Assignment 2024-25/EEN1058_Assignment_Examples-WiFi:/root/ns-allinone-3.30.1/ns-3.30.1/scratch"
+    working_dir: /root/ns-allinone-3.30.1/ns-3.30.1
+    tty: true
+    stdin_open: true
+    command: /bin/bash
+
